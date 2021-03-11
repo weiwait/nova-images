@@ -1,13 +1,12 @@
 {
     "name": "weiwait/nova-images",
-    "description": "A Laravel Nova field.",
+    "description": "A Laravel Nova field for multiple images by json. Laravel Nova 多图组件，目前仅支持json格式",
     "keywords": [
-        "laravel",
-        "nova"
+        "laravel", "nova", "images", "多图", "drop", "裁剪", "多图裁剪"
     ],
     "license": "MIT",
     "require": {
-        "php": ">=7.1.0"
+        "php": ">=7.4.0"
     },
     "autoload": {
         "psr-4": {
