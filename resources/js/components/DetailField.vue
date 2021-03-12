@@ -3,7 +3,7 @@
         <div class="w-1/4 py-4">
             <h4 class="font-normal text-80">{{ field.name }}</h4>
         </div>
-        <div class="w-3/4 py-4 break-words">
+        <div class="w-1/2 py-4 break-words">
             <ul style="padding: 0;">
                 <li v-for="image in field.previewUrl" class="preview">
                     <img class="img" :src="image" alt="">
