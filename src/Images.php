@@ -54,11 +54,9 @@ class Images extends File
             }
 
             $model->{$attribute} = $paths;
-            if ($items = $model->getOriginal()[$requestAttribute]) {
-                foreach ($items as $item) {
-                    if (!in_array($item, $paths)) {
-                        Storage::disk($this->getStorageDisk())->delete($item);
-                    }
+            foreach ($model->getOriginal()[$requestAttribute] ?? [] as $item) {
+                if (!in_array($item, $paths)) {
+                    Storage::disk($this->getStorageDisk())->delete($item);
                 }
             }
         }
